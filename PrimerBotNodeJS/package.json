@@ -2,13 +2,13 @@
   "name": "bot",
   "version": "1.0.0",
   "description": "Bot para el tutorial.",
-  "main": "testBot.js",
-  "author": "Micah Mahlke Workman",
+  "main": "Bot.js",
+  "author": "Jordi",
   "dependencies": {
     "discord.js": "^11.2.1"
   },
   "scripts": {
-    "start": "node testBot.js",
+    "start": "node Bot.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
