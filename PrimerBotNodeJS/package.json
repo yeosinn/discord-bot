@@ -1,7 +1,7 @@
 {
-  "name": "test-bot",
+  "name": "bot",
   "version": "1.0.0",
-  "description": "Bot for tutorial.",
+  "description": "Bot para el tutorial.",
   "main": "testBot.js",
   "author": "Micah Mahlke Workman",
   "dependencies": {
