@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Tutorial Discord Bot</title>
+    <link rel="stylesheet" href="botTutorial.css">
+  </head>
+  <body>
+    <h1>Como Hacer Un Bot En NodeJS</h1>
+    <h3>1. Hacer servidor de discord</h3>
+    <p>Si ya tiene un servidor en el que desea que este su bot, puede omitir este paso, pero de lo contrario, dentro de Discord, haga clic en el boton + debajo de la lista de servidores y haga un nuevo servidor.</p>
+    <h3>2. Hacer la aplicacion</h3>
+    <p>Mientras este conectado a Discord, vaya a: <a href="https://discordapp.com/developers/applications/">https://discordapp.com/developers/applications/</a>.</p>
+    <p>Click en "Crear una APP". Apartado settings, Click "Add Bot".</p>
+    <h3>3.  Guardate la ID y el TOKEN del bot</h3>
+    <p>En la configuracion de informacion general, puede encontrar el ID. Copia esto. A continuacion, vaya a la seccion de bot y copie el token de bot.</p>
+    <h3>4. Agregar bot al servidor</h3>
+    <p>Copia la URL: https://discordapp.com/oauth2/authorize?&client_id=CLIENTID&scope=bot&permissions=0</p>
+    <p>Ahora, reemplace la parte que dice CLIENTID con el ID que registro en el paso anterior. Pegue esto en su navegador y vaya alli.  A continuacion, seleccione el servidor al que desea agregar el bot y haga clic en autorizar.</p>
+    <h3>5. Crea un archivo llamado package.json</h3>
+    <p>Haga una carpeta donde desee mantener el bot en su computadora.  En esa carpeta desea crear un nuevo archivo llamado package.json.  Mira el codigo en este <a href="https://github.com/Nidoprince/BotTutorial/blob/master/package.json">link</a> para ver lo que debe poner en él, cambiando el nombre del autor y el bot a lo que quieras.</p>
+    <h3>6. Crear tu primer codigo</h3>
+    <p>Estamos usando JavaScript para este tutorial, así que crea un archivo llamado Bot.js, o cualquier nombre que quieras para el. Sin embargo, si elige un nombre diferente, asegurese de cambiar el nombre en el archivo package.json tambien. Una vez mas, puede seguir el ejemplo en este <a href = "https://github.com/Nidoprince/BotTutorial/blob/master/testBot.js">link</a>.</p>
+    <h3>7. Instalar paquetes</h3>
+    <p>Abra una consola o PowerShell, vaya a la carpeta en la que tiene el codigo y, a continuacion, ejecute: npm install.  Recibira algunas advertencias, pero puede ignorarlas, siempre y cuando se instale el paquete discord.js.  Puede comprobar que se instalo buscando en la carpeta node_modules.</p>
+    <h3>8. Guardar TOKEN</h3>
+    <p>Ahora, necesitamos guardar nuestro token de bot de una manera que no se compartira si compartimos el codigo.  Hay un par de maneras de hacerlo, pero la forma en que funciona en el codigo de ejemplo es que necesita guardar el token en las variables de entorno.</p>
+    <p>Si utiliza un sistema operativo Windows, busque variables de entorno en el equipo.  Deberia abrir algo llamado "propiedades del sistema".  Haga clic en "Variables de entorno" en la parte inferior de la pestaña Avanzadas.  En la mitad inferior del diálogo que aparece, haga clic en nuevo.  Asigne un nombre a la variable TEST_BOT_TOKEN y haga que el valor del token que copio en el paso 3.  Pulsa OK.</p>
+    <p>Si estás en un Mac, tendrás que actualizar el archivo .bash_profile para incluir la nueva variable.</p>
+    <h3>9. Encender El Bot</h3>
+    <p>Abra una nueva consola o instancia de PowerShell.  El que tenia abierto antes no tendra la nueva variable de entorno que acaba de establecer.  Navegue a la carpeta del bot y ejecute: npm start.</p>
+    <p>Despues de un momento deberías ver algunas cosas, y comentara "Estoy listo!".  Si es asa, el bot se esta ejecutando.  Usted puede ir a la discord y escribir !hello y responderá.  Si hay un error, entonces uno de los pasos se arruino y tendra que hacerlo denuevo.</p>
+    <h3>10. Añadir funcionalidad adicional</h3>
+    <p>Ahora que tiene la funcionalidad básica funcionando, no es demasiado difícil agregar más al bot.  Estamos usando la API discord.js, para que pueda consultar su documentacion en: <a href="https://discord.js.org/#/">https://discord.js.org/#/</a>.  Mira a tu alrededor, y empieza a hacer algo genial.</p>
+    <p>Si tienes dudas contacta con el creador Jordi#5072</p>
+  </body>
+</html>
